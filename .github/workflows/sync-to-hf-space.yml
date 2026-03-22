@@ -13,6 +13,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      - name: Setup Git LFS
+        run: |
+          git lfs install
+          git lfs pull
+
       - name: Install rsync
         run: sudo apt-get update && sudo apt-get install -y rsync
 
