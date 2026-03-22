@@ -32,4 +32,4 @@ jobs:
 
           git diff --cached --quiet || git commit -m "Auto sync from GitHub"
 
-          git push https://$HF_TOKEN@huggingface.co/spaces/Keerthick/smartvision-ai main
+          git push https://hf_user:$HF_TOKEN@huggingface.co/spaces/Keerthick/smartvision-ai main
