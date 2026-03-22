@@ -1,0 +1,11 @@
+pillow
+datasets
+tqdm
+pandas
+matplotlib
+tensorflow
+scipy
+ultralytics
+streamlit
+streamlit-webrtc 
+opencv-python
