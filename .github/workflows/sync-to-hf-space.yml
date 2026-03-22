@@ -13,6 +13,9 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      - name: Install rsync
+        run: sudo apt-get update && sudo apt-get install -y rsync
+
       - name: Push to Hugging Face
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
@@ -22,7 +25,7 @@ jobs:
 
           git clone https://huggingface.co/spaces/Keerthick/smartvision-ai hf_space
 
-          rsync -av --exclude='.git' ./ hf_space/
+          rsync -av --exclude='.git' --exclude='smartvision_dataset' --exclude='CNNs_YOLO' ./ hf_space/
 
           cd hf_space
           git add .
