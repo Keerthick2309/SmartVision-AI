@@ -2,21 +2,21 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-st.title("📊 Model Performance Comparison")
+st.title("Model Performance Comparison")
 
 st.write("Comparison of different CNN models used for image classification")
 
 data = {
     "Model": ["VGG16", "ResNet50", "MobileNetV2", "EfficientNetB0"],
-    "Accuracy": [0.74, 0.85, 0.82, 0.88]
+    "Accuracy": [0.80, 0.79, 0.82, 0.79]
 }
 
 df = pd.DataFrame(data)
 
-st.subheader("📋 Performance Table")
+st.subheader("Performance Table")
 st.dataframe(df, use_container_width=True)
 
-st.subheader("📈 Accuracy Comparison")
+st.subheader("Accuracy Comparison")
 
 fig, ax = plt.subplots()
 ax.bar(df["Model"], df["Accuracy"])
