@@ -13,7 +13,7 @@ def load_models():
         "VGG16": tf.keras.models.load_model("models/VGG16_best.h5"),
         "ResNet50": tf.keras.models.load_model("models/resnet50_best.h5"),
         "MobileNetV2": tf.keras.models.load_model("models/mobilenet_model.h5"),
-        "EfficientNetB0": tf.keras.models.load_model("models/efficientnet_best1.h5")
+        "EfficientNetB0": tf.keras.models.load_model("models/efficientnet_best.h5")
     }
     return models
 

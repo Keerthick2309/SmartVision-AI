@@ -9,3 +9,5 @@ ultralytics
 streamlit
 streamlit-webrtc 
 opencv-python
+scikit-learn
+seaborn
