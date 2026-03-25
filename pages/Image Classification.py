@@ -6,6 +6,15 @@ import json
 
 st.title("Image Classification")
 st.write("Upload an image to classify using CNN models")
+classes = [
+    "airplane", "bed", "bench", "bicycle", "bird", "bottle",
+    "bowl", "bus", "cake", "car", "cat", "chair", "couch",
+    "cow", "cup", "dog", "elephant", "horse", "motorcycle",
+    "person", "pizza", "potted plant", "stop sign",
+    "traffic light", "truck"
+]
+
+st.write(", ".join(classes))
 
 @st.cache_resource
 def load_models():
