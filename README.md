@@ -7,11 +7,6 @@ sdk: streamlit
 app_file: app.py
 ---
 
-
-
-## 📄 About Page (Streamlit Code)
-
-<details>
 st.markdown("## SmartVision AI - Intelligent Multi-Class Object Recognition System")
 
 st.write("""
@@ -75,5 +70,3 @@ st.write("""
 st.markdown("---")
 st.caption("© 2026 SmartVision AI Project")
 ```
-
-</details>
