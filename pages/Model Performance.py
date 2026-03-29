@@ -8,7 +8,7 @@ st.write("Comparison of different CNN models used for image classification")
 
 data = {
     "Model": ["VGG16", "ResNet50", "MobileNetV2", "EfficientNetB0"],
-    "Accuracy": [0.80, 0.80, 0.82, 0.83]
+    "Accuracy": [0.80, 0.81, 0.82, 0.83]
 }
 
 df = pd.DataFrame(data)
