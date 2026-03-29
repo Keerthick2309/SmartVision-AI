@@ -28,7 +28,7 @@ jobs:
           git config --global user.email "rithikj2300@gmail.com"
           git config --global user.name "Keerthick2309"
 
-          git clone https://huggingface.co/spaces/Keerthick/smartvision hf_space
+          git clone https://huggingface.co/spaces/Keerthick/smartvision-ai hf_space
 
           rsync -av --exclude='.git' --exclude='smartvision_dataset' --exclude='CNNs_YOLO' ./ hf_space/
 
@@ -37,4 +37,4 @@ jobs:
 
           git diff --cached --quiet || git commit -m "Auto sync from GitHub"
 
-          git push https://hf_user:$HF_TOKEN@huggingface.co/spaces/Keerthick/smartvision main
+          git push https://hf_user:$HF_TOKEN@huggingface.co/spaces/Keerthick/smartvision-ai main
